@@ -1,0 +1,36 @@
+<form  [formGroup]="formUserTest">
+  <div>
+    <label>Nombre</label>
+    <br/>
+    <input
+      type="text"
+      name="nombre"
+      formControlName="nombre"
+    />
+
+  </div>
+  <br/>
+  <div>
+    <label>Edad</label>
+    <br/>
+    <input
+      type="number"
+      name="edad"
+      formControlName="edad"
+    />
+  </div>
+  <br/>
+  <div>
+    <input
+      type="checkbox"
+      name="politicas"
+      formControlName="politicas"
+    />
+    <label>Acepto politicas de privacidad</label>
+  </div>
+
+  <br/>
+  <div>
+    <button type="button" (click)="onSubmit()">Agregar</button>
+  </div>
+</form>
